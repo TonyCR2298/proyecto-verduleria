@@ -1,0 +1,388 @@
+/* estilos generales */
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+/* utilidades */
+
+.line{
+    height: 6px;
+    width: 30%;
+    background: #2A8C0F;
+    display: inline-block;
+}
+
+.promo{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}
+
+/* todo ETILOS DEL SCROLLTOP */
+
+.totop {
+    background: #e65609;
+    position: fixed;
+    bottom: 40px;
+    right:20px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    z-index: 100;
+}
+
+.totop.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+}
+
+/* ESTILOS DEL MENU */
+
+.nav-item a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 15px;
+    transition: all 0.4s;
+}
+
+.nav-item a:hover{
+    color: #2A8C0F;
+}
+
+.navbar-brand{
+    height: 50px;
+    width: 100px;
+}
+
+.search{
+    height: 45px;
+    outline: none;
+    border: 2px solid #2A8C0F;
+    background-color: transparent;
+    border-radius: 20px 0px 0px 20px;
+    border-right: none;
+    box-shadow: none;
+}
+
+.btn1{
+    height: 45px;
+    outline: none;
+    border: none;
+    background-color: #2A8C0F;
+    color: white;
+    border-radius: 0px 20px 20px 0px;
+    transition: all 0.4s;
+}
+
+.btn1:hover{
+    background-color: #1e630b;
+}
+
+.bi-bag-check{
+    font-size: 30px;
+    color: #e65609;
+    cursor: pointer;
+    padding-top: 5px;
+    transition: all 0.4s;
+}
+
+.bi-bag-check:hover{
+    color: #2A8C0F;
+}
+
+.navbar-toggler{
+    font-size: 20px;
+    border: none;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* AQUI COMIENZA LOS ESTILOS DE MAIN */
+
+.main{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/imagenes/main-frutas.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.main h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.main p:nth-child(1){
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.main p{
+    font-size: 18px;
+    color: white;
+}
+
+.mbtn1{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    border: none;
+    color: white;
+    background: #2A8C0F;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.mbtn1:hover{
+    background-color: #1e630b;
+}
+
+.mbtn2{
+    height: 50px;
+    width: 25%;
+    outline: none;
+    background-color: white;
+    color: #2A8C0F;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.4s;
+}
+
+.mbtn2:hover{
+    background-color: #2A8C0F;
+    border: none;
+    color: white;
+}
+
+/* TODO MEDIAS DEL MAIN */
+
+@media(max-width: 1400px){
+    .main h1{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 700px){
+    .main h1{
+        font-size: 35px;
+    }
+}
+
+    /* estilos de banner de promo */
+
+    .BanerOfertas{
+    margin-top: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/imagenes/banner-foto-manzanas-verdes.jpg) no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    }
+
+    .BanerOfertas h2 {
+        font-size: 3rem;
+        color: white;
+    }
+
+    .BanerOfertas p{
+        font-size: 18px;
+        color: white;
+    }
+
+    #centrar-main{
+        margin-top: 80px;
+    }
+
+    /* TODO MEDIAS DE LAS PROMOS */
+
+@media(max-width: 700px){
+
+    
+    .BanerOfertas h2 {
+        font-size: 25px;
+    }
+
+    .BanerOfertas p{
+        font-size: 16px;
+    }
+}
+
+    /* ESTILOS DE MAS DE NOSOSTROS */
+
+    .MasDeNossotros{
+        margin-top: 20px;
+        background-color: #2A8C0F;
+    }
+
+    .line2{
+        height: 6px;
+    width: 30%;
+    background: white;
+    display: inline-block;
+    }
+
+    .MasDeNossotros h3{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .MasDeNossotros .card{
+        border: none;
+        cursor: pointer;
+    }
+
+    .MasDeNossotros i{
+        font-size: 45px;
+        color: #e65609;
+    }
+
+    .MasDeNossotros h4{
+        font-weight: lighter;
+        padding: 10px 10px;
+    }
+
+    /* estilos de la seccion de productos recientes */
+
+    .productos h3 {
+        font-size: 3rem;
+        color: #e65609;
+        font-weight: bold;
+    }
+    
+    .productos p:nth-child(1){
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
+    }
+    
+    .productos p{
+        font-size: 18px;
+        color: rgb(0, 0, 0);
+    }
+
+    .productos .card{
+        border: none;
+        cursor: pointer;
+    }
+
+    .productos .card-body{
+        border: 1px dashed rgb(201, 199, 199);
+    }
+
+    .head1{
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .per1{
+        color: rgb(168, 162, 162);
+    }
+
+    .btnc{
+        height: 50px;
+        width: 50%;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: #2A8C0F;
+        border-radius: 50px;
+        margin: 0 auto;
+        display: block;
+        transition: all 0.4s;
+    }
+
+    .btnc:hover{
+        color: #e65609;
+        outline: none;
+        border: 1px solid #2A8C0F;
+        background: transparent;
+        border-radius: 50px;
+    }
+
+    .mbtn3{
+        height: 50px;
+        width: 25%;
+        outline: none;
+        border: none;
+        color: white;
+        background: #e65609;
+        border-radius: 50px;
+        transition: all 0.4s;
+    }
+    
+    .mbtn3:hover{
+        background-color: #b35523;
+    }
+
+    .mbtn3 a{
+        text-decoration: none;
+        color: white;
+    }
+
+    /* AQUI VAN LOS ESTILOS DE FORMAS DE PAGO Y DELIVERY */
+
+    .pago{
+        background-color: #2A8C0F;
+    }
+
+    .pago i{
+        font-size: 60px;
+        color: #e65609;
+    }
+
+    .pago .card{
+        border: none;
+        cursor: pointer;
+    }
+
+    /* ESTILOS DE FRUTAS */
+
+    .mainFrutas{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/imagenes/frutas-canasto.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    }
+
+    /* ESTILOS DE VERDURAS */
+
+    .mainVerduas{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/imagenes/verduras-mostrador.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        }
+
+    /* ESTILOS OTROS PRODUCTOS */
+    
+    .otrosProductos h1{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    .otrosProductos .card{
+        border: none;
+    }
+
+
+
+
