@@ -23,6 +23,12 @@
     color: red;
 }
 
+.promo-blanca{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
 /* todo ETILOS DEL SCROLLTOP */
 
 .totop {
@@ -372,6 +378,15 @@
         width: 100%;
         }
 
+        /* ESTILOS DE PROMOCINES */
+
+    .mainpPromos{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../multimedia/imagenes/ofertas-frutas-y-verduras.jpg);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        }
+
     /* ESTILOS OTROS PRODUCTOS */
     
     .otrosProductos h1{
@@ -382,6 +397,10 @@
     .otrosProductos .card{
         border: none;
     }
+
+    /* ESTILOS DE POLITICAS DE USO */
+
+    
 
 
 
