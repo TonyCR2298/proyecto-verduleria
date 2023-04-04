@@ -26,20 +26,26 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"> 
 </head>
 
-<body>
+<body class="bg-light loaded">
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
 
     <!-- ======================AQUI COMIENZA EL MENU========================= -->
 
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <a class="navbar-brand" href="/index.html"><img src="./multimedia/imagenes/logo-verduleria-proyecto.svg" class="img-fluid" alt=""></a>
+            <a class="navbar-brand" href="./index.html"><img src="./multimedia/imagenes/logo-verduleria-proyecto.svg" class="img-fluid" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav m-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="/index.html">Inicio</a>
+                        <a class="nav-link" href="./index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./html/frutas.html">Frutas</a>
@@ -56,7 +62,7 @@
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="px-2 search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn1 me-2 px-3" type="submit">Search</button>
+                    <button class="btn1 me-2 px-3" type="submit">Buscar</button>
                     <span><i class="bi bi-bag-check"></i></span>
                 </form>
             </div>
@@ -74,9 +80,9 @@
                     <p class="m-0">Calidad en todos los productos</p>
                     <h1>Frutas y verduras siempre frescas</h1>
                     <div class="line my-4"></div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio amet veniam sunt similique voluptate officiis, accusamus cupiditate nesciunt dolores odio vitae quae suscipit sequi provident a necessitatibus.</p>
+                    <p>En De Mi Tierra, nos comprometemos a ofrecer a nuestros clientes los productos más frescos y de la mejor calidad. Nos esforzamos por ser un negocio ético y sostenible que apoya a los agricultores locales y promueve un estilo de vida saludable.</p>
 
-                    <button class="mbtn1 mt-4">Leer más</button>
+                    <button class="mbtn1"><a href="./#nosotros" class="text-decoration-none text-white">Leer más</a></button>
                     <button class="mbtn3"><a href="./html/promociones.html">Comprar</a></button>
 
                 </div>
@@ -88,11 +94,10 @@
 
     <!-- ============AQUI COMIENZA EL BANNER DE "Disfruta de las mejores ofertas"============= -->
 
-    <section class="BanerOfertas text-center">
+    <section class="BanerOfertas text-center" id="mejores-ofertas">
         <div class="container">
             <div class="row">
-                <!-- probar los valores de col, a la hora de hacer el responsive, lo tengo diferente al del video -->
-                <div class="col-lg-8 py-5 col-md-6 col-sm-12 col-12 m-auto">
+                <div class="col-lg-8 marginBnnerPromo col-md-6 col-sm-12 col-12 m-auto">
                     <h2>Disfruta de las mejores ofertas</h2>
                     <div class="line my-4"></div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe fuga a quis nulla voluptas aperiam ut doloremque dolore culpa dolores.</p>
@@ -107,7 +112,7 @@
 
     <!-- ============AQUI COMIENZA MAS DE NOSOTROS============= -->
 
-    <section class="MasDeNossotros text-center pb-5">
+    <section class="MasDeNossotros text-center pb-5" id="bienvenido-a-de-mi-tierra">
         <div class="container">
             <div class="row py-5 text-white">
                 <div class="col-lg-6 m-auto">
@@ -158,7 +163,7 @@
 
     <!-- ============AQUI COMIENZA PRODUCTOS RECIENTES============= -->
 
-    <section class="productos bg-light">
+    <section class="productos bg-light" id="productos-recientes">
         <div class="container">
             <div class="row p-5 text-center">
                 <div class="col-lg-6 m-auto">
@@ -202,7 +207,7 @@
                             <img src="./multimedia/imagenes/tomates-productos.png" class="img-fluid pb-3" alt="">
 
                             <h4 class="head1">Tomate</h4>
-                            <p class="per1">Tomate Seleccion Especial Kilo -4 A 6/p>
+                            <p class="per1">Tomate Seleccion Especial Kilo -4 A 6</p>
                             <h4 class="head1">₡1.980</h4>
                             <button class="btnc my-4">Agregar</button>
                         </div>
@@ -218,7 +223,8 @@
 
                             <h4 class="head1">Aguacate</h4>
                             <p class="per1">Aguacate Nacional Kilo</p>
-                            <h4 class="head1">₡2.500</h4>
+                            <h4 class="head1 text-decoration-line-through">₡2.500</h4>
+                            <h5 class="promo">PROMO ₡1600</h5>
                             <button class="btnc my-4">Agregar</button>
                         </div>
                     </div>
@@ -244,7 +250,8 @@
 
                             <h4 class="head1">Papaya</h4>
                             <p class="per1"> Kg -1 A 2 Unidad Por Kg</p>
-                            <h4 class="head1">₡480</h4>
+                            <h4 class="head1 text-decoration-line-through">₡480</h4>
+                            <h5 class="promo">PROMO ₡250</h5>
                             <button class="btnc my-4">Agregar</button>
                         </div>
                     </div>
@@ -293,7 +300,7 @@
 
     <!-- ============AQUI COMIENZA PRODUCTOS MAS COMPRADOS============= -->
 
-    <section class="productos bg-light">
+    <section class="productos bg-light" id="mas-comprado">
         <div class="container">
             <div class="row p-5 text-center">
                 <div class="col-lg-6 m-auto">
@@ -337,7 +344,7 @@
                             <img src="./multimedia/imagenes/tomates-productos.png" class="img-fluid pb-3" alt="">
 
                             <h4 class="head1">Tomate</h4>
-                            <p class="per1">Tomate Seleccion Especial Kilo -4 A 6/p>
+                            <p class="per1">Tomate Seleccion Especial Kilo -4 A 6 </p>
                             <h4 class="head1">₡1.980</h4>
                             <button class="btnc my-4">Agregar</button>
                         </div>
@@ -396,6 +403,38 @@
 
     <!-- ============AQUI TERMINA PRODUCTOS MAS COMPRADOS============= -->
 
+    <!-- ============AQUI COMIENZA EL NOSOTROS (MISION Y VISION)============= -->
+
+    <section class="seccionNosotros bg-light" id="nosotros">
+        <div class="container">
+
+        <div class="row text-center">
+            <div class="col-lg-8 col-md-6 col-sm-12 col-12 m-auto">
+                <h2>Nosotros</h2>
+                <p>Conoce un poco más de nuestra empresa y de nuestras aspiraciones.</p>
+                <div class="line my-4"></div>
+            </div>
+        </div>
+
+        <article class="row mb-5">
+            <div class="col-12">
+                <div class="card border-0 d-flex flex-md-row overflow-hidden align-items-center">
+                    <div class="card-body">
+                        <p><strong class="tituloMisionVision">Misión</strong><br>Nuestra misión como verdulería es proporcionar a nuestros clientes los productos más frescos y de alta calidad en frutas y verduras. Nos comprometemos a ofrecer una amplia variedad de productos, tanto locales como importados, para satisfacer las necesidades y gustos de todos nuestros clientes. Además, nos esforzamos por brindar un servicio excepcional y una experiencia de compra agradable para todos aquellos que visitan nuestra verdulería.</p>
+
+                        <p><strong class="tituloMisionVision">Visión</strong><br>Nuestra visión es convertirnos en la mejor opción para la compra de frutas y verduras frescas en nuestra comunidad. Nos esforzamos por ser reconocidos como líderes en calidad y servicio, ofreciendo productos frescos y de alta calidad a precios competitivos. Además, buscamos establecer relaciones sólidas y duraderas con nuestros clientes, basadas en la confianza, la honestidad y el respeto mutuo. En resumen, nuestra visión es ser la verdulería de elección para aquellos que buscan productos frescos y un servicio excepcional.</p>
+                    </div>
+
+                    <img src="./multimedia/imagenes/foto-de-persona-sembrando.png" alt="">
+                </div>
+            </div>
+        </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ============AQUI COMIENZA EL NOSOTROS (MISION Y VISION)============= -->
 
     <!-- ============AQUI COMIENZA EL FOOTER============= -->
     <footer
@@ -425,7 +464,7 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                 <h6 class="text-uppercase mb-4 font-weight-bold">Menu</h6>
                 <p>
-                    <a class="text-white" href="/index.html">Inicio</a>
+                    <a class="text-white" href="./index.html">Inicio</a>
                 </p>
                 <p>
                     <a class="text-white" href="./html/verduras.html">Verduras</a>
