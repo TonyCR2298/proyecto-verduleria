@@ -261,9 +261,9 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
 }
 
 .main h1{
@@ -508,9 +508,9 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     }
 
     /* ESTILOS DE VERDURAS */
@@ -520,9 +520,9 @@
         background-size: cover;
         height: 100vh;
         width: 100%;
-        background-position: center;
+        /* background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: fixed; */
         }
 
         /* ESTILOS DE PROMOCINES */
@@ -532,9 +532,9 @@
         background-size: cover;
         height: 100vh;
         width: 100%;
-        background-position: center;
+        /* background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: fixed; */
         }
 
         /* ESTILOS DE CONTACTO */
@@ -544,9 +544,9 @@
         background-size: cover;
         height: auto;
         width: 100%;
-        background-position: center;
+        /* background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: fixed; */
         }
 
         .marginContacto{
